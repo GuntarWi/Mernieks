@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+li{
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+/* CSS Grid
+=================================*/
+.continer{
+    width: 100%;
+    max-width: 1402px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row:after {
+    display: block;
+    content: '.';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+[class*="span"] {
+    float: left;
+    display: inline;
+}
+
+[class*="span"]:last-child {
+    margin-right: 0;
+    float: right;
+}
+
+.span-1{  width: 8.333333%;  }
+.span-2{  width: 16.66667%;  }
+.span-3{  width: 25%;  }
+.span-4{  width: 33.33333%;  }
+.span-5{  width: 41.66667%;  }
+.span-6{  width: 50%;  }
+.span-7{  width: 58.33333%;  }
+.span-8{  width: 66.66667%;  }
+.span-9{  width: 75%;  }
+.span-10{  width: 83.33333%;  }
+.span-11{  width: 91.66667%;  }
+.span-12{  width: 100%;  }
+
+.offset-1{  margin-left: 8.333333%;  }
+.offset-2{  margin-left: 16.66667%;  }
+.offset-3{  margin-left: 25%;  }
+.offset-4{  margin-left: 33.33333%;  }
+.offset-5{  margin-left: 41.66667%;  }
+.offset-6{  margin-left: 50%;  }
+.offset-7{  margin-left: 58.33333%;  }
+.offset-8{  margin-left: 66.66667%;  }
+.offset-9{  margin-left: 75%;  }
+.offset-10{  margin-left: 83.33333%;  }
+.offset-11{  margin-left: 91.66667%;  }
+.offset-12{  margin-left: 100%;  }
+
+/*Navigation
+=============================================*/
+.nav{
+    background-color: #473a2d;
+    color: #ffffff;
+}
+
+.logo{
+    margin-top: 26px;
+    margin-bottom: 12px;
+}
+
+.nav-menu{
+    margin-top: 26px;
+
+}
+
+.nav-menu li{
+    line-height: 12px;
+}

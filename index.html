@@ -3,37 +3,269 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/norm.css"/>
+    <link rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.theme.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
           rel='stylesheet' type='text/css'>
-
-
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/norm.css"/>
 </head>
 <body>
 
-<div class="continer">
-    <selection class="navigation">
-        <div class="nav row">
-            <div class="wrapper">
-            <div class="logo span-2">
-                <img src="img/nav-logo.png" alt=""/>
-            </div>
-            <div class="nav-menu span-4">
-                <ul>
-                    <li>Sakums</li>
-                    <li>Pakalpojumi</li>
-                    <li>Par mums</li>
-                    <li>Klienti</li>
-                    <li>Kontakti</li>
-                    <li>RU</li>
-                    <li>EN</li>
-                </ul>
-            </div>
+<section class="navigation-bar">
+   <div class="row container">
+       <div class="nav-logo">
+           <img src="img/nav-logo.png" alt=""/>
+       </div>
+       <div class="header-nav">
+           <ul class="top-nav">
+               <li><a href="#">Sākums</a></li>
+               <li><a href="#">Pakalpojumi</a></li>
+               <li><a href="#">Par mums</a></li>
+               <li><a href="#">Kontakti</a></li>
+               <li><a href="#">Klienti</a></li>
+           </ul>
+           <ul class="nav-lang">
+               <li><a href="#">EN</a></li>
+               <li><a href="#">RU</a></li>
+           </ul>
+       </div>
+       </div>
+</section>
+    <section class="slider">
+        <div class="row slider-content">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="slider-container-1">
+                    <div class="slider-1">
+                        <p class="window-1">
+                            Mērniecība
+                        </p>
+
+                        <p class="window-2">
+                            Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai
+                        </p>
+                    </div>
+                    <div class="slider-2"></div>
+                    <p class="window-1">
+                        Ģeodēzija
+                    </p>
+                    <p class="window-2">
+                        Apakšzemes komunikāciju uzmērīšana un saskaņošana
+                    </p>
+                </div>
+                <div class="slider-3">
+                    <p class="window-1">
+                        Zemes ierīcība
+                    </p>
+                    <p class="window-2">
+                        Aktualizējam un izgatavojam zemes robežu, situācijas un apgrūti
+                    </p>
+                </div>
             </div>
         </div>
-    </selection>
-</div>
+    </section>
+    <section class="Pakalpojumi" id="Services">
+        <div class="container">
+            <div class="col-12 line">
+                <h2>Pakalpojumi</h2>
+            </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img class="article-image" src="img/simbols.png">
+                        <div class=" article-text">
+                            <h3 class="item-hedding">Ģeodēzija</h3>
+                            <p>Topogrāfiskā uzmērīšana un plānu izgatavošana mērogā  1:250, 1:500, 1:1000, 1:2000;</p>
+                            <p>Apakšzemes komunikāciju uzmērīšana un saskaņošana;</p>
+                            <p>Situācijas uzmērīšana;</p>
+                            <p>Būvasu nospraušana;</p>
+                            <p>Konstrukciju novietojuma pārbaude.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img class="article-image " src="img/simbols1.png">
+                        <div class="article-text">
+                            <h3 class="item-hedding">Mērniecība</h3>
+                            <p>Zemesgabalu robežu uzmērīšana zemes un būvju reģistrācijai;</p>
+                            <p>Zemesgabalu robežu noteikšana dabā;</p>
+                            <p>Atkārtota robežpunktu koordinātu noteikšana un atlikšana dabā;</p>
+                            <p>Zemesgabalu apvienošana vai sadalīšana dabā, pēc zemes ierīcības projekta vai detālplānojuma izstrādes.</p>
+                            <p>Meža transformējamo platību uzmērīšana;</p>
+                            <p>Robežstigu un vizūru noteikšana;</p>
+                            <p>Zemesgabalu apgrūtinājumu, robežu un situācijas plānu izgatavošana.</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img class="article-image " src="img/simbols2.png">
+                        <div class="article-text">
+                            <h3 class="item-hedding">Zemes ierīcība</h3>
+                            <p>Zemes ierīcības projektu izstrāde;</p>
+                            <p>Zemes ierīcības projektu saskaņošana.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="Par-mums" id="About">
+            <div class="container">
+                <div class="row line">
+                    <h2>Par mums</h2>
+                </div>
+                <div class="about-intro">
+                    <p class="about-text">Mūsu uzņēmuma veiksmīgas pastāvēšanas un darbības pamatā ir kvalitatīvi
+                        padarīts darbs, lojalitāte pret katru klientu un demokrātiskas cenas kā uzņēmumiem, tā
+                        privātpersonām. Darbinieki     mērniecības jomā strādā jau kopš 1996. gada, darba pieredze ir
+                        uzkrāta strādājot gan valsts iestādēs, gan privātos uzņēmumos, bet 2012. gadā apvienojoties
+                        mērniecības nozares speciālistiem tika nodibināts uzņēmums SIA “Ventspils mērnieks”. Šajā īsajā
+                        uzņēmuma pastāvēšanas laikā, tas sevi ir pierādījis kā uzticams un profesionāls sadarbības
+                        partneris. To pierāda mūsu patstāvīgie klienti un viņu uzticība mūsu darbam.
+                    </p>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="profil">
+                                <div class="contact">
+                                    <img src="img/portrets1.png" alt=""/>
+                                    <h1>Edgars Ūdris</h1>
+                                    <p>tel. +371 29114401</p>
+                                    <p>edgars@ventspilsmernieks.lv</p>
+                                </div>
+                                <div class="row">
+                                    <div class="certificate row">
+                                        <div class="col-5">
+                                            <div class="certificate">
+                                                <p>Zemes ierīcības darbi sertifikāta Nr. BA-72</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="certificate">
+                                                <p>Kadastrālās uzmērīšanas darbi sertifikāta Nr. BB-73</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profil-about">
+                                        <p>Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu
+                                            kadastrālo uzmērīšanu un topogrāfisko izpēti būvniecības un teritorijas
+                                            plānošanas vajadzībām, datu reģistrāciju un aktualizāciju Nekustamā īpašuma
+                                            valsts kadastra reģistrā (turpmāk tekstā – NĪVKR).  </p>
+
+                                        <p>Uzmērīšanas, zemes ierīcības darbu un NĪVKR dokumentācijas noformēšanu un
+                                            kārtošanu, kā arī zemes robežu un situācijas plānu,  zemes robežu, situāciju
+                                            un apgrūtinājuma plānu izstrādi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="profil">
+                                <div class="contact">
+                                    <img src="img/portrets1.png" alt=""/>
+                                    <h1>Edgars Ūdris</h1>
+                                    <p>tel. +371 29114401</p>
+                                    <p>edgars@ventspilsmernieks.lv</p>
+                                </div>
+                                <div class="row">
+                                    <div class="certificate-container row">
+                                        <div class="col-5">
+                                            <div class="certificate">
+                                                <p>Zemes ierīcības darbi sertifikāta Nr. BA-72</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+
+                                        </div>
+                                    </div>
+                                    <div class="profil-about">
+                                        <p>Speciālists veiks uzdevumus, kas saistīti ar nekustamā īpašuma objektu
+                                            kadastrālo uzmērīšanu un topogrāfisko izpēti būvniecības un teritorijas
+                                            plānošanas vajadzībām, datu reģistrāciju un aktualizāciju Nekustamā īpašuma
+                                            valsts kadastra reģistrā (turpmāk tekstā – NĪVKR).  </p>
+
+                                        <p>Uzmērīšanas, zemes ierīcības darbu un NĪVKR dokumentācijas noformēšanu un
+                                            kārtošanu, kā arī zemes robežu un situācijas plānu,  zemes robežu, situāciju
+                                            un apgrūtinājuma plānu izstrādi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="klienti" id="Client">
+        <div class="row container">
+            <div class="col-12 line">
+                <h2>Klienti</h2>
+            </div>
+                <ul class="logo-container-1">
+                    <li><a href="#"><img src="img/logo/1.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/LVM.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/content_GibsonLogo_small.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/businessbuilder-01.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/Baltic%20sustainable%20forestry.png" alt=""/></a></li>
+                </ul>
+                   <ul class="logo-container-2">
+                       <li><a href="#"><img src="img/logo//Statoil_Fuel_&_Retail.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/Casamona_Logo.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/blueroots-logo.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/LVC.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/latven.png" alt=""/></a></li>
+                   </ul>
+                <ul class="logo-container-3">
+                    <li><a href="#"><img src="img/logo/filterline.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/lmt_logo_rgb_black.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/brivosta.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/ventbunkers.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/latio.png" alt=""/></a></li>
+                    <li><a href="#"><img src="img/logo/VENTSPILS%20PILSĒTAS%20%20PAŠVALDĪBA.png" alt=""/></a></li>
+                    <li><a href="#"><img src="" alt=""/></a></li>
+                </ul>
+        </div>
+    </section>
+    <section class="footer" id="Footer">
+            <div class="row container">
+               <div class="col-12 line">
+                   <h2>Kontakti</h2>
+               </div>
+                <div class="col-8">
+                    <div class="footer-map">
+                        <div class="map">
+                            <div class="google-map" id="googleMap" style="width:400px;height:287px;"></div>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info-img">
+                            <img src="img/chuvziki.png" alt="logo"/>
+                        </div>
+                        <ul class="footer-contact">
+                            <li>SIA "VENTSPILS MĒRNIEKS”</li>
+                            <li>tālrunis: + 371 29235562, 29114401</li>
+                            <li>e-pasts: birojs@ventspilsmernieks.lv</li>
+                            <li>Vasarnīcu iela 9</li>
+                            <li>Ventspils, LV-3601</li>
+                        </ul>
+                </div>
+            </div>
+                <div class="col-4">
+                    <div class="footer-mail">
+                        <h3>Sazināties ar mums</h3>
+                        <form class="botom" action="">
+                            <input  class="input-form" type="text" name="firstname" value="Vārds">
+                            <input class="input-form" type="text" name="firstname" value="e-pasts">
+
+                            <textarea placeholder="Teksts..."></textarea>
+                            <input class="btn" type="button" value="Sūtīt">
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<script src="lib/jquery/jquery-2.1.4.min.js"></script>
+<script src="js/jq.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js1"></script>
+<script src="lib/owl.carousel/owl-carousel/owl.carousel.js1"></script>
+
 
 </body>
 </html>

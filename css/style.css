@@ -101,6 +101,12 @@ h2{
     margin-top: 20px;
 }
 
+.line-up{
+    border-left: 1px solid #FFFFFF;
+    height: 20px;
+    width: 1px;
+    display: inline;
+}
 
 
 
@@ -135,11 +141,6 @@ h2{
     background-color: #5b4d3b;
 }
 
-.line-up{
-    border: 1px solid black;
-    height: 20px;
-}
-
 .divider{
     border-left:3px solid #38546d;
     border-right:3px solid #16222c;
@@ -157,39 +158,21 @@ h2{
     height: auto;
 }
 
-.slider-content{
+.slider-rgb-box li{
+
+    vertical-align: bottom;
+    margin-bottom: 20px;
 }
 
 
-.window-1{
+.slider-rgb-box{
+    display: block;
     background-color: rgba(53, 44, 44, 0.2);
     padding: 10px;
-    margin: 10px;
-    display: block;
+    max-width: 100px;
+    vertical-align: bottom;
 }
 
-.window-2{
-    background-color: rgba(53, 44, 44, 0.2);
-    padding: 10px;
-    margin: 10px;
-    display: block;
-
-}
-
-.slider-1 p{
-    margin: 0px;
-}
-.slider-2 p{
-    margin: 0px;
-}
-
-.slider-3 p{
-    margin: 0px;
-}
-
-.slider-container-1{
-    margin-top: 100px;
-}
 
 .slider-1{
     background-image: url("../img/slider/bilde1.png");
@@ -234,7 +217,7 @@ h2{
 }
 .certificate p{
     background-color: #624e36;
-    padding: 20px 40px 20px 34px;
+    padding: 6px 40px 6px 34px;
     font-size: 13px;
     color: #fff;
 }
@@ -429,7 +412,28 @@ h2{
 }
 
 .certificate p{
-    padding: 20px 10px 20px 34px
+
 }
 
+}
+/*Test css part
+====================================*/
+.test1{
+    background: #624e36;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.col-5-fix{
+    width: 100% ;
+}
+
+
+.fix{
+    display: inline-block;
+    max-width: 50%;
+}
+
+.p-fix{
+    padding: 7px;
 }

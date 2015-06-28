@@ -541,17 +541,14 @@ right: 5%;
 
     .klienti,
     .footer-map,
-    .slider
+    .slider,
+    .loading-container
     {
         display: none;
     }
 
     .footer-mail textarea{
         width: 300px;
-    }
-
-    input{
-        display: block;
     }
 
 }

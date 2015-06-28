@@ -4,26 +4,18 @@
 $(document).ready(function(){
     $(".btn").click(function(){
         $(".footer-mail").addClass("hidden");
+        $(".loading-part").removeClass("hidden");
     });
 
 
-    //$(".owl-carousel").owlCarousel({
-    //
-    //    //navigation : false, // Show next and prev buttons
-    //    //slideSpeed : 300,
-    //    //paginationSpeed : 400,
-    //    //singleItem:true
-    //
-    //    // "singleItem:true" is a shortcut for:
-    //     items : 1
-    //    // itemsDesktop : false,
-    //    // itemsDesktopSmall : false,
-    //    // itemsTablet: false,
-    //    // itemsMobile : false
-    //
-    //});
 
-
+    $(window).bind("scroll", function() {
+        if ($(this).scrollTop() > 2050) {
+            $(".arrow").fadeIn('fast');
+        } else if($(this).scrollTop() < 500) {
+            $(".arrow").stop().fadeOut('fast');
+        }
+    });
 
     $(document).ready(function() {
         $("#owl-demo").owlCarousel({

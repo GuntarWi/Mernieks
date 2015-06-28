@@ -21,9 +21,9 @@ div.owl-prev,div.owl-next{
     position: absolute;
     top:30%;
 }div.owl-prev{
-     left: 0;
+     left: 220px;
  }div.owl-next{
-      right: 0;
+      right: 220px;
   }.clickable .owl-buttons div{
        height: 100px;
        line-height: 100px;

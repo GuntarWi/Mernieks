@@ -38,11 +38,22 @@ h2{
 
 }
 
+h4{
+    font-size: 38px;
+    color: rgba(241, 241, 241, 1);
+    font-weight: normal;
+}
+
+input{
+    color: #a38a55;
+    padding-left: 10px;
+}
+
 
 /* CSS Grid
 =================================*/
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -68,8 +79,8 @@ h2{
     float: right;
 }
 
-.col-1{   width: 81px  }
-.col-2{   width: 381px  }
+.col-1{   width: 8.333333%;  }
+.col-2{   width: 16.66667%;  }
 .col-3{   width: 33.333%;}
 .col-4{   width: 440px  }
 .col-5{   width: 50%  }
@@ -80,6 +91,15 @@ h2{
 .col-10{  width: 990px  }
 .col-11{  width: 1091px  }
 .col-12{  width: 100%  }
+
+.span-1{   max-width: 34%;  }
+.span-3{   max-width: 34%   }
+.span-2{   max-width: 48%;  }
+.span-4{   width: 62%;  }
+.offset-1{  margin-left: 14.333333%;  }
+
+
+
 
 
 /*Basic
@@ -97,7 +117,7 @@ h2{
     height: 41px;
     border: hidden;
     background-color: #b1965c;
-    color: #9a8350;
+    color: #f1f1f1;
     margin-top: 20px;
 }
 
@@ -151,6 +171,14 @@ h2{
 
 /* Slider Selection
 =======================================================*/
+.item{
+    height: 590px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 #owl-demo .item img{
     display: block;
@@ -158,37 +186,65 @@ h2{
     height: auto;
 }
 
-.slider-rgb-box li{
-
-    vertical-align: bottom;
-    margin-bottom: 20px;
+.postition li{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 
-.slider-rgb-box{
+.slider-box{
     display: block;
-    background-color: rgba(53, 44, 44, 0.2);
-    padding: 10px;
-    max-width: 100px;
-    vertical-align: bottom;
+    background-color: rgba(53, 44, 44, 0.46);
+}
+
+.slider-box h4{
+    padding: 18px;
+}
+
+.slider-box p {
+    font-size: 25px;
+    color: rgba(241, 241, 241, 1);
+    padding: 18px;
+    font-weight: 400;
+
+}
+
+.slider-msg-1{
+    position: absolute;
+    bottom: 175px;
+    left: 360px;
+}
+
+.slider-msg-2{
+    position: absolute;
+    bottom: 200px;
+    left: 370px;
+}
+
+.slider-msg-3{
+    position: absolute;
+    bottom: 175px;
+    left: 45%;
+    text-align: right;
 }
 
 
 .slider-1{
     background-image: url("../img/slider/bilde1.png");
-    height: 590px;
+
 }
 
 
 .slider-2{
     background-image: url("../img/slider/bilde2.png");
-    height: 590px;
+
 
 }
 
 .slider-3{
     background-image: url("../img/slider/bilde3.png");
-    height: 590px;
+
 
 }
 /* Par Mums About us
@@ -205,9 +261,17 @@ h2{
     margin-right: 60px;
 }
 
+
+
 .contact{
     text-align: center;
     color: #c19f55;
+}
+
+.certificate-container{
+    background: #624e36;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .contact p{
@@ -228,9 +292,6 @@ h2{
     padding-right: 10px;
 }
 
-.cerfix p {
-    padding-bottom: 20px;
-}
 
 .profil-about p{
     color: #ededed;
@@ -239,6 +300,20 @@ h2{
 
 .profil-about:last-child{
     padding-bottom: 90px;
+}
+
+
+.col-5-fix{
+    width: 100% ;
+}
+
+.fix{
+    display: inline-block;
+    max-width: 50%;
+}
+
+.cerfix p {
+    padding-bottom: 20px;
 }
 
 
@@ -301,7 +376,13 @@ h2{
     padding-bottom: 85px;
 }
 
-
+.arrow{
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    height: auto;
+}
 
 
 /*Footer
@@ -394,46 +475,78 @@ h2{
 }
 
 
+.loading-part{
+    background-color: #846b48;
+    position: absolute;
+    width: 419px;
+    height: 264px;
+right: 5%;
+    bottom: 76px;
+}
+
+.loading-container{
+    position: relative;
+}
+.loading-part p{
+    padding-top:25px;
+    color:#c09f74;
+    text-align: center;
+    font-size: 25px;
+}
+.loading{
+    margin-left: 165px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border-top: 8px solid rgb(154, 131, 80);
+    border-right: 8px solid rgba(141, 113, 65, 0.69);
+    border-bottom: 8px solid rgba(141, 113, 65, 0.69);
+    border-left: 8px solid rgba(141, 113, 65, 0.69);
+    border-radius: 100%;
+
+    animation: rotate 1s infinite linear;
+}
+@keyframes rotate{
+    from {transform: rotate(0deg) translate3d(0,0,0)}
+    to {transform: rotate(359deg) translate3d(0,0,0)}
+}
+
 /* Responsive CSS Grid
 ===================================*/
 
 @media only screen and (max-width: 1199px) {
-.container{
-    width: 960px;
-}
-.klienti,
-.footer-map
-{
-    display: none;
-}
+    .container{
+        width: 960px;
+    }
 
-.col-8{
-    width: 500px;
-}
+    .col-6{
+        width: 468px;
+    }
+    .col-8{
+        width: 500px;
+    }
 
-.certificate p{
-
-}
-
-}
-/*Test css part
-====================================*/
-.test1{
-    background: #624e36;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.col-5-fix{
-    width: 100% ;
-}
+    [class*="col"]:last-child {
+        margin-right: 0;
+        float: left;
+    }
 
 
-.fix{
-    display: inline-block;
-    max-width: 50%;
+    .klienti,
+    .footer-map,
+    .slider
+    {
+        display: none;
+    }
+
+    .footer-mail textarea{
+        width: 300px;
+    }
+
+    input{
+        display: block;
+    }
+
 }
 
-.p-fix{
-    padding: 7px;
-}
+

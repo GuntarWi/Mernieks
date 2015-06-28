@@ -261,7 +261,9 @@ input{
     margin-right: 60px;
 }
 
-
+.contact a{
+    color: #c19f55;
+}
 
 .contact{
     text-align: center;
@@ -398,6 +400,11 @@ input{
 .line{
     border-bottom: 1px dashed #c7a457;
     margin-bottom: 45px;
+}
+
+.footer-contact a{
+    color: #bc9b54;
+    padding: 0;
 }
 
 .footer-contact{
